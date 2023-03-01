@@ -20,6 +20,7 @@ function App() {
                     path='/' 
                     element={ <HomePage /> }
                 />
+                <Route path='/login' element={<Navigate replace to='/' />} />
               </Routes>
             : <Routes>
                 <Route path='/' element={<Navigate replace to='/login' />} />
